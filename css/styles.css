@@ -1,0 +1,42 @@
+.photo {
+    width: 360px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+#counter{
+    margin-bottom: 50px;
+    
+}
+.btn {
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+}
+
+#validation-input {
+    margin-top: 50px;
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+#font-size-control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+#controls{
+    margin-top: 30px;
+}
+#boxes{
+    height: 30px;
+    width: 30px;
+}
