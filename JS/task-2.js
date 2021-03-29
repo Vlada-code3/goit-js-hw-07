@@ -22,20 +22,16 @@ const ingredients = [
 
 const showIngredients = document.querySelector('#ingredients');
 
-const newEl = ingredients.map(el => {
-    const newLi = document.createElement('li')
-    newLi.textContent = el;
-    showIngredients.appendChild(newLi)
-    return newLi
-})
-console.log(newEl)
+const newEL= ingredients.map(el => {
+  const  newLi = document.createElement('li');
+   newLi.textContent = el;
+   
+   return newLi
+    })
 
+showIngredients.append(...newEL)
 
-// titleEl.insertAdjacentHTML('afterbegin','<h2>Ингредиенты</h2>')
-// titleEl.classList.add('item')
-// // titleEl.textContent = 'Ингредиенты'
-// // .insertAdjacentHTML("beforebegin",'html )
-// console.log(titleEl);
+//__________Eto dlya sebya ya sdelala 'dobavila Ingridient v li'
 
 const lastLi = document.createElement('li')
 const titleEl = document.createElement('h2')
@@ -51,4 +47,4 @@ navEl.appendChild(lastLi)
 
 
 
-// document.newEl.appendChild(titleEl)
+

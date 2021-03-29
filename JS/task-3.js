@@ -28,8 +28,11 @@ const images = [
   },
 ];
 
-const showGalerry = document.querySelector('#gallery');
-const galleryEl = images.map(el => {
-    showGalerry.insertAdjacentHTML('afterbegin', `<li><img class="photo" src="${el.url}" alt="${el.alt}"></li>`)
-    return showGalerry;
-})
+const galleryMarkup = document.querySelector('#gallery');
+  
+  images.forEach(el =>{
+    let imageMarkup = `<li ><img class="pictures" src=${el.url} alt=${el.alt}</img></li>`
+    galleryMarkup.insertAdjacentHTML("afterbegin", imageMarkup);
+  })
+
+  console.log(galleryMarkup);

@@ -1,9 +1,13 @@
-.photo {
+.pictures {
     width: 360px;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    
+}
+#gallery {
+    list-style-type: none ;
 }
 
 #counter{

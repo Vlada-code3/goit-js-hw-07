@@ -36,10 +36,12 @@ ref.input.addEventListener('blur', onInputChange);
 
 function onInputChange() {
 
-    if (ref.input.value.length >= 6) {
-        ref.input.classList.add('valid');
+    if (ref.input.value.length === 6) {
+        ref.input.classList.add('valid')
+        ref.input.classList.remove('invalid')
     } else {
         ref.input.classList.add('invalid')
+        ref.input.classList.remove('valid')
     }
 }
 
